@@ -17,7 +17,12 @@ class OrganizationFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => fake()->company,
+            'org_form' => fake()->randomElement(['IKS - Interkommunalt selskap', 'KOMM - Kommune']),
+            'org_number' => fake()->randomNumber('9'),
+            'address' => fake()->address,
+            'latitude' => fake()->latitude,
+            'longitude' => fake()->longitude,
         ];
     }
 }

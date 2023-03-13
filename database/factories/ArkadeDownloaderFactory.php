@@ -17,7 +17,8 @@ class ArkadeDownloaderFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'email' => fake()->unique()->safeEmail,
+            'wants_news' => fake()->boolean(),
         ];
     }
 }
