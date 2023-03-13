@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('arkade_downloaders', function (Blueprint $table) {
             $table->id();
+            $table->string('email')->unique();
+            $table->boolean('has_arkade_v1_experience')->default(false);;
+            $table->boolean('wants_news')->default(false);
             $table->timestamps();
         });
     }

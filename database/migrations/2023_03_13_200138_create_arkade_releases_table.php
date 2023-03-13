@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('arkade_releases', function (Blueprint $table) {
             $table->id();
+            $table->string('version_number', 16);
+            $table->string('user_interface', 3);
+            $table->string('package_filename', 32)->nullable();
+            $table->timestamp('released_at');
             $table->timestamps();
         });
     }

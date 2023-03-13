@@ -13,7 +13,11 @@ return new class extends Migration
     {
         Schema::create('arkade_downloads', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->timestamp('downloaded_at')->useCurrent();
+
+            $table->foreignId('arkade_release_id')->constrained();
+            $table->foreignId('arkade_downloader_id')->constrained();
+            $table->foreignId('organization_id')->nullable()->constrained();
         });
     }
 

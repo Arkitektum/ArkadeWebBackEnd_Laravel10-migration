@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        DB::statement('ALTER TABLE `arkade_releases` MODIFY `released_at` TIMESTAMP NULL');
     }
 
     /**
@@ -19,6 +19,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        DB::statement('ALTER TABLE `arkade_releases` MODIFY `released_at` TIMESTAMP NOT NULL');
     }
 };

@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('arkade_downloads', function (Blueprint $table) {
-            //
+            $table->boolean('is_automated');
         });
     }
 
@@ -22,7 +22,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('arkade_downloads', function (Blueprint $table) {
-            //
+            $table->dropColumn('is_automated');
         });
     }
 };
