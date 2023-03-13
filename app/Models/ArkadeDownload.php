@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class ArkadeDownload extends Model
 {
+    use HasFactory;
+
     const CREATED_AT = 'downloaded_at';
     const UPDATED_AT = null;
 
