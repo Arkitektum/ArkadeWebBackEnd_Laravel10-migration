@@ -12,6 +12,6 @@ class ArkadeDownloadSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        ArkadeDownload::factory(600)->create();
     }
 }
