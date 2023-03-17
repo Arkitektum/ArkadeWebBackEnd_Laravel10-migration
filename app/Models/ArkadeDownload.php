@@ -26,7 +26,7 @@ class ArkadeDownload extends Model
      */
     public function arkadeRelease()
     {
-        return $this->belongsTo('App\ArkadeRelease');
+        return $this->belongsTo('App\Models\ArkadeRelease');
     }
 
     /**
@@ -34,7 +34,7 @@ class ArkadeDownload extends Model
      */
     public function arkadeDownloader()
     {
-        return $this->belongsTo('App\ArkadeDownloader');
+        return $this->belongsTo('App\Models\ArkadeDownloader');
     }
 
     /**
@@ -42,6 +42,6 @@ class ArkadeDownload extends Model
      */
     public function organization()
     {
-        return $this->belongsTo('App\Organization');
+        return $this->belongsTo('App\Models\Organization');
     }
 }

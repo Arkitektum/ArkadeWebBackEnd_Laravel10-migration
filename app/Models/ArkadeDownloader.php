@@ -23,6 +23,6 @@ class ArkadeDownloader extends Model
      */
     public function downloads()
     {
-        return $this->hasMany('App\ArkadeDownload');
+        return $this->hasMany('App\Models\ArkadeDownload');
     }
 }
