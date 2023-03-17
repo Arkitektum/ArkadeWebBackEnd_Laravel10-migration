@@ -16,12 +16,12 @@ class ArkadeRelease extends Model
     ];
 
     /**
-     * The attributes that should be mutated to dates.
+     * The attributes that should be cast.
      *
      * @var array
      */
-    protected $dates = [
-        'released_at',
+    protected $casts = [
+        'released_at' => 'datetime',
     ];
 
     public function scopeIsReleased($query){
