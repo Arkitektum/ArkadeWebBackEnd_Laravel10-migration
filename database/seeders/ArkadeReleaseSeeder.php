@@ -12,42 +12,42 @@ class ArkadeReleaseSeeder extends Seeder
      */
     public function run(): void
     {
-        ArkadeRelease::factory()->create([
+        ArkadeRelease::create([
             'version_number' => '2.0.0',
             'user_interface' => 'GUI',
             'package_filename' => 'Arkade5-2.0.0.msi',
             'released_at' => '2020-07-08'
         ]);
 
-        ArkadeRelease::factory()->create([
+        ArkadeRelease::create([
             'version_number' => '2.0.0',
             'user_interface' => 'CLI',
             'package_filename' => 'Arkade5CLI-2.0.0.zip',
             'released_at' => '2020-07-08'
         ]);
 
-        ArkadeRelease::factory()->create([
+        ArkadeRelease::create([
             'version_number' => '2.1.0',
             'user_interface' => 'GUI',
             'package_filename' => 'Arkade5-2.1.0.msi',
             'released_at' => '2020-10-19'
         ]);
 
-        ArkadeRelease::factory()->create([
+        ArkadeRelease::create([
             'version_number' => '2.1.0',
             'user_interface' => 'CLI',
             'package_filename' => 'Arkade5CLI-2.1.0.zip',
             'released_at' => '2020-10-19'
         ]);
 
-        ArkadeRelease::factory()->create([
+        ArkadeRelease::create([
             'version_number' => '2.2.0',
             'user_interface' => 'GUI',
             'package_filename' => 'Arkade5-2.2.0.msi',
             'released_at' => '2021-01-15'
         ]);
 
-        ArkadeRelease::factory()->create([
+        ArkadeRelease::create([
             'version_number' => '2.2.0',
             'user_interface' => 'CLI',
             'package_filename' => 'Arkade5CLI-2.2.0.zip',
