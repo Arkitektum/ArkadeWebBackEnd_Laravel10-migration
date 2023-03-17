@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\ArkadeDownloader;
 use Illuminate\Database\Seeder;
 
 class DownloaderSeeder extends Seeder
