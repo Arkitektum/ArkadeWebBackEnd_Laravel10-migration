@@ -3,7 +3,9 @@
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             {{ __('Arkadenedlastinger') }} ({{ $totalCount }})
         </h2>
-        <div class="pt-2 text-sm"><a href="{{ route('statistics.index') }}">&#x2190 Tilbake til oversikt</a></div>
+        <div class="pt-2">
+            <a class="p-2 rounded hover:bg-gray-50 text-sm" href="{{ route('statistics.index') }}">&#x2190 Til statistikkoversikt</a>
+        </div>
     </x-slot>
 
     <div class="py-6 max-w-7xl mx-auto sm:px-6 lg:px-8">
