@@ -1,13 +1,8 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="inline-flex pl-3 font-semibold text-xl text-gray-800 dark:text-gray-200">
+        <h2 class="pl-3 font-semibold text-xl text-gray-800 dark:text-gray-200">
             {{ __('Arkade-bygg') }}
         </h2>
-        <a href="{{ route('dashboard') }}" class="float-right px-3 border border-transparent text-sm font-medium
-                    rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700
-                    dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
-            &#x2190 Til oversikt
-        </a>
     </x-slot>
 
     <div class="py-12">
