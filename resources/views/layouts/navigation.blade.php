@@ -5,7 +5,7 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}" class="text-lg">ArkadeWeb-backend</a>
+                    <a href="{{ route('dashboard') }}" class="text-lg">ArkadeWebBackEnd</a>
                 </div>
 
                 <!-- Navigation Links -->
