@@ -12,7 +12,9 @@
                     @foreach($buildTypes as $buildType)
                     <li>
                         <a class="p-4 block shadow rounded hover:bg-gray-50"
-                           href="{{ route('builds.buildList', $buildType) }}">{{ ucfirst($buildType) }}</a>
+                           href="{{ route('builds.buildList', $buildType) }}">{{ ucfirst($buildType) }}
+                            <x-list-link-arrow/>
+                        </a>
                     </li>
                     @endforeach
                 </ul>

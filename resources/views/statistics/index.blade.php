@@ -12,7 +12,9 @@
                     @foreach($links as $linkName => $href)
                     <li>
                         <a class="p-4 block shadow rounded hover:bg-gray-50"
-                           href="{{ $href }}">{{ ucfirst($linkName) }}</a>
+                           href="{{ $href }}">{{ ucfirst($linkName) }}
+                            <x-list-link-arrow/>
+                        </a>
                     </li>
                     @endforeach
                 </ul>

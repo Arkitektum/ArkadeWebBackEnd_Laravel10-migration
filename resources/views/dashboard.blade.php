@@ -12,15 +12,21 @@
                     <ul class="list-none space-y-4">
                         <li>
                             <a class="p-4 block shadow rounded hover:bg-gray-50" title="Statistikk"
-                               href="{{ route('statistics.index') }}">Arkade-nedlastingsstatistikk</a>
+                               href="{{ route('statistics.index') }}">Arkade-nedlastingsstatistikk
+                                <x-list-link-arrow/>
+                            </a>
                         </li>
                         <li>
                             <a class="p-4 block shadow rounded hover:bg-gray-50" title="Arkade-bygg"
-                               href="{{ route('builds.index') }}"> Arkade-bygg</a>
+                               href="{{ route('builds.index') }}"> Arkade-bygg
+                                <x-list-link-arrow/>
+                            </a>
                         </li>
                         <li>
                             <a class="p-4 block shadow rounded hover:bg-gray-50" title="Arkade-nyhetsinteressenter"
-                               href="{{ route('newsReceivers') }}"> Arkade-nyhetsinteressenter</a>
+                               href="{{ route('newsReceivers') }}"> Arkade-nyhetsinteressenter
+                                <x-list-link-arrow/>
+                            </a>
                         </li>
                     </ul>
                 </div>
