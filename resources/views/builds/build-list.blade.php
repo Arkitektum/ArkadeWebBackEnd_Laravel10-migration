@@ -3,7 +3,7 @@
         <h2 class="inline-flex pl-3 font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             {{ ucfirst($buildType) }}
         </h2>
-        <a href="{{ route('builds.index') }}" class="float-right px-3 border border-transparent text-sm font-medium
+        <a href="{{ route('builds.index') }}" class="float-right px-3 pt-1 border border-transparent text-sm font-medium
                     rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700
                     dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
             &#x2190 Til Arkadebygg-oversikt
